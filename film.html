@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="phim hay, phim moi, phim hanh dong, phim hoat hinh, phim kinh di" />
+    <meta name="description" content="Phim Mới chất lượng cao miễn phí. Xem phim hd VietSub. Phim thuyết minh chất lượng HD.">
+    <title>Ghiền Phim | Phim Mới | Phim Vietsub</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="movie3.png" rel="shortcut icon" />
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="#"><img src="logo.png" alt="Logo"></a></li>
+            <li><a id ="homeButton" title="Trang chủ" href="#">TRANG CHỦ</a></li>
+            <li><a id ="phimBoTab" class="category-tab active" href="#">PHIM BỘ</a></li>
+            <li><a id ="phimLeTab" class="category-tab "href="#">PHIM LẺ</a></li>
+            <li class="menu-item dropdown" id="theloai">
+                <a href="#">THỂ LOẠI</a>
+                <ul class="submenu">
+                    <li><a href="#">Hành Động</a></li>
+                    <li><a href="#">Hoạt Hình</a></li>
+                    <li><a href="#">Kinh Dị</a></li>
+                    <li><a href="#">Lãng mạn</a></li>
+                    <li><a href="#">Lãng mạn</a></li>
+                    <li><a href="#">Khoa học</a></li>
+                    <li><a href="#">Hài hước</a></li>
+                </ul>
+            </li>
+            <li class="box"><input id="searchInput" type="text" placeholder="Tìm tên phim..."></li>
+        </ul>
+    </nav>
+
+
+    <div class="keyword-table">
+        <h2>Từ khóa đề xuất</h2>
+        <ul id="suggestion-list"></ul>
+    </div>
+
+    
+    <section>
+        <h1>PHIM LẺ</h1>
+        <div class="films phim-le">
+        <div class="films">
+            <div class="film">
+                <a href="movie-1/index.html"><img id ="filmImage" src="1.png" alt="film" onclick="goToIndexPage()"></a>
+                <div class="text">
+                    <h3>Quỷ Quyệt 5: Cửa Đỏ Vô Định</h3>
+                </div>
+            </div>
+            <div class="film" onclick="viewMovieDetail('2')">
+                <img src="2.png" alt="film"/>
+                <div class="text">
+                    <h3>Nhiệm Vụ Bất Khả Thi</h3>
+                </div>
+            </div>
+            <div class="film" onclick="viewMovieDetail('3')">
+                <img src="3.png" alt="film"/>
+                <div class="text">
+                    <h3>Avengers 4: Endgame</h3>
+                </div>
+            </div>
+            <div class="film" onclick="viewMovieDetail('4')">
+                <img src="4.png" alt="film"/>
+                <div class="text">
+                    <h3>Nàng Tiên Cá</h3>
+                </div>
+            </div>
+            <div class="film">
+                <img src="PNG/9.png" alt="film"/>
+            <div class="text"> 
+                <h3>Mất Tích</h3> 
+            </div>
+        </div>    
+        <div class="film">
+            <img src="PNG/10.png" alt="film"/>
+            <div class="text"> 
+                <h3>Ký Sinh Trùng</h3> 
+            </div>
+        </div>    
+        <div class="film">
+            <img src="PNG/11.png" alt="film"/>
+            <div class="text"> 
+                <h3>Chúng Ta</h3> 
+            </div>
+        </div>    
+        <div class="film">
+            <img src="PNG/12.png" alt="film"/>
+            <div class="text"> 
+                <h3>Tuổi Nổi Loạn</h3> 
+            </div>
+        </div>    
+
+    </section>
+
+    <section>
+        <h1>PHIM BỘ</h1>
+        <div class="films phim-bo">
+        <div class="films">
+            <div class="film" onclick="viewMovieDetail('5')">
+                <img src="5.png" alt="film"/>
+                <div class="text">
+                    <h3>Xác Sống</h3>
+                </div>
+            </div>
+            <div class="film" onclick="viewMovieDetail('6')">
+                <img src="6.png" alt="film"/>
+                <div class="text">
+                    <h3>Alice in Borderland</h3>
+                </div>
+            </div>
+            <div class="film" onclick="viewMovieDetail('7')">
+                <img src="7.png" alt="film"/>
+                <div class="text">
+                    <h3>Trò Chơi Con Mực</h3>
+                </div>
+            </div>
+            <div class="film" onclick="viewMovieDetail('8')">
+                <img src="8.png" alt="film"/>
+                <div class="text">
+                    <h3>Wednesday</h3>
+                </div>
+            </div>
+        </div>
+            <div class="film">
+                <img src="PNG/13.png" alt="film"/>
+            <div class="text"> 
+                <h3>The Last Of Us</h3> 
+            </div>
+        </div>    
+        <div class="film">
+            <img src="PNG/14.png" alt="film"/>
+            <div class="text"> 
+                <h3>Kingdom</h3> 
+            </div>
+        </div>    
+        <div class="film">
+            <img src="PNG/15.png" alt="film"/>
+            <div class="text"> 
+                <h3>Giáo Dục Giới Tính</h3> 
+            </div>
+        </div>    
+        <div class="film">
+            <img src="PNG/16.png" alt="film"/>
+            <div class="text"> 
+                <h3>Dark</h3> 
+            </div>
+        </div>     
+
+    </section>
+    <footer>
+        <p class="infor" style="color:orange"><strong>-- Thông tin -- </strong></p>
+        <ul class="list">
+            <li><a href="#">Điều khoản sử dụng</a></li>
+            <li><a href="#">Chính sách riêng tư</a></li>
+            <li><a href="#">Khiếu nại bản quyền</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </footer>
+
+    <div class="search-suggestions">
+        <ul id="suggestion-list"></ul>
+    </div>
+    
+
+        <script>
+            //back trang chủ
+            document.getElementById('homeButton').addEventListener('click', function(event) {
+                event.preventDefault(); // Ngăn trình duyệt chuyển đến href
+                history.go(0); // Quay lại trang đầu tiên trong lịch sử
+            });
+            </script>
+         <script>    
+    // Xử lý tìm kiếm phim
+        const searchInput = document.getElementById('searchInput');
+        const films = document.querySelectorAll('.film');
+        const filmLists = document.querySelectorAll('.films');
+
+        searchInput.addEventListener('input', () => {
+            const searchText = searchInput.value.toLowerCase();
+            films.forEach(film => {
+                const filmTitle = film.querySelector('.text h3').textContent.toLowerCase();
+                if (filmTitle.includes(searchText)) {
+                    film.style.display = 'block';
+                } else {
+                    film.style.display = 'none';
+                }
+            });
+        });
+
+        // Tính năng hoàn thiện và đề cử từ khóa
+        const searchSuggestions = document.createElement('div');
+        searchSuggestions.classList.add('search-suggestions');
+        searchInput.parentNode.appendChild(searchSuggestions);
+
+        searchInput.addEventListener('input', () => {
+            const inputText = searchInput.value.toLowerCase();
+            const suggestions = keywords.filter(keyword => keyword.toLowerCase().includes(inputText));
+            displaySuggestions(suggestions);
+        });
+
+        function displaySuggestions(suggestions) {
+            const suggestionList=document.getElementById('suggestion-list');
+            searchSuggestions.innerHTML = '';//Xóa đề cử trước đó
+            if (suggestions.length === 0) {
+                searchSuggestions.style.display = 'none';
+                return;
+            }
+            searchSuggestions.style.display = 'block';
+            
+            suggestions.forEach(suggestion => {
+                const suggestionItem = document.createElement('div');
+                suggestionItem.classList.add('suggestion-item');
+                suggestionItem.textContent = suggestion;
+                //Đổi màu đề cử
+                suggestionItem.style.color='#ffaa00';
+                suggestionItem.addEventListener('click', () => {
+                    searchInput.value = suggestion;
+                    searchSuggestions.style.display = 'none';
+                    // Trigger search
+                    searchInput.dispatchEvent(new Event('input'));
+                });
+                searchSuggestions.appendChild(suggestionItem);
+            });
+        }
+
+        document.addEventListener('click', (event) => {
+            if (!searchSuggestions.contains(event.target) && event.target !== searchInput) {
+                searchSuggestions.style.display = 'none';
+            }
+        });
+      // Get the elements related to movie categories
+const phimBoTab = document.querySelector('#phimBoTab');
+const phimLeTab = document.querySelector('#phimLeTab');
+const phimLeSection = document.querySelector('section:nth-of-type(1)');
+const phimBoSection = document.querySelector('section:nth-of-type(2)');
+
+  // Event listeners for category tabs
+  phimBoTab.addEventListener('click', () => {
+    phimLeSection.style.display = 'none';
+    phimBoSection.style.display = 'block';
+    
+});
+
+phimLeTab.addEventListener('click', () => {
+    phimBoSection.style.display = 'none';
+    phimLeSection.style.display = 'block';
+    
+});
+
+// Function to filter films by category
+function filterFilmsByCategory(category) {
+    films.forEach(film => {
+        if (film.classList.contains(category)) {
+            film.style.display = 'block';
+        } else {
+            film.style.display = 'none';
+        }
+    });
+}
+
+// Đóng submenu khi rê chuột ra khỏi menu thể loại
+const dropdowns = document.querySelectorAll('.menu-item.dropdown');
+dropdowns.forEach(dropdown => {
+    const submenu=dropdown.querySelector('.submenu');
+    dropdown.addEventListener('mouseleave', () => {
+        submenu.style.display = 'none';
+        console.log('Dropdown closed');
+    });
+});
+const theLoaiTab = document.getElementById('theloai');
+const submenu = theLoaiTab.querySelector('.submenu');
+
+theLoaiTab.addEventListener('mouseenter', () => {
+    submenu.style.display = 'block';
+});
+
+submenu.addEventListener('mouseleave', () => {
+    submenu.style.display = 'none';
+});
+
+    </script>
+
+<script>
+    function viewMovieDetail(movieId) {
+        window.location.href = movie-detail.html?id=${movieId};
+    }
+    // JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+    const filmImage = document.getElementById('filmImage');
+    filmImage.addEventListener('click', function() {
+        // Redirect to index.html
+        window.location.href = 'index.html';
+    });
+});
+
+    
+// Fetch movie details from JSON
+async function fetchMovieDetails(movieId) {
+    try {
+        const response = await fetch('movies.json');
+        const data = await response.json();
+        const movie = data.find(movie => movie.id === movieId);
+
+        if (movie) {
+            const movieDetailDiv = document.getElementById('movieDetail');
+            movieDetailDiv.innerHTML = `
+                <h3>${movie.title}</h3>
+                <p>Thể loại: ${movie.genre}</p>
+                <p>Đạo diễn: ${movie.director}</p>
+                <p>Năm sản xuất: ${movie.year}</p>
+                <p>Mô tả: ${movie.description}</p>
+                <p>Diễn viên: ${movie.actor}</p>
+            `;
+        }
+    } catch (error) {
+        console.error('Lỗi khi đọc dữ liệu phim:', error);
+    }
+}
+
+// Lấy ID phim từ URL và hiển thị thông tin chi tiết
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const movieId = urlParams.get('id');
+fetchMovieDetails(movieId);
+//nhấn vào ảnh
+        const filmImage = document.getElementById('filmImage');
+        filmImage.addEventListener('click', redirectToIndex);
+</script>
+</body>
+</html>
